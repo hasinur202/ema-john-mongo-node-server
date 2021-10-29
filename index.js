@@ -68,6 +68,10 @@ app.get('/', (req, res) => {
     res.send('Ema John server is running');
 });
 
+app.get('/hello', (req, res) => {
+    res.send('Hello server');
+});
+
 app.listen(port, () => {
     console.log('Server running at port', port);
 })
